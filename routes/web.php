@@ -10,7 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'TodoController@index');
 
-Route::get('/', 'TodosController@index');
-
-Route::resource('todo', 'TodosController');
+Route::resource('todo', 'TodoController');
